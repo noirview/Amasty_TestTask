@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Задача о банкомате</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="container__heading">Банкомат</h1>
+        <form name="atm" method="POST" class="form">
+            <div class="form__field">
+                <label for="denom" class="form__label">Номинал в наличии</label>
+                <input type="text" placeholder="5, 10, ..., 50, 100, ..." name="denomination" id="denom" class="form__input">
+            </div>
+            <div class="form__field">
+                <label for="amo" class="form__label">Ваша сумма</label>
+                <input type="number" placeholder="1234" name="amount" id="amo" class="form__input">
+            </div>
+            <button class="form__submit" type="submit">Отправить</button>
+        </form>
+        
+        <div class="answer__container" style="display: none;">
+            <p class="answer__heading">Ответ:</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
